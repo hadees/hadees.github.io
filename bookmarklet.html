@@ -1,0 +1,11 @@
+---
+layout: page
+title: Bookmarklet 
+header: Bookmarklet
+group: hidden
+---
+{% include JB/setup %}
+
+<h3 class="plain"><a href="javascript:(function(){if(typeof gon!==&quot;undefined&quot;&amp;&amp;typeof gon.company!==&quot;undefined&quot;&amp;&amp;typeof gon.company.id!==&quot;undefined&quot;){alert(&quot;Company ID: &quot;+ gon.company.id)}else{alert(&quot;Couldn't find a Company ID&quot;)}})()" role="button" class="btn btn-primary btn-lg">Get Company ID</a> <span class="glyphicon glyphicon-arrow-left"></span> Drag to toolbar.</h3>
+
+<p>To use simply go to a page on the company's subdomain and click the bookmarklet in your toolbar.  You'll need to be logged in for it to work.</p>
